@@ -8,8 +8,7 @@ namespace CG_Assist_MCPServer.Tools
     [McpServerToolType]
     public sealed class LeaveTools
     {
-        private readonly string _filePath =
-            Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "leavebalances.json");
+        private readonly string _filePath = Path.Combine(AppContext.BaseDirectory, "wwwroot", "leavebalances.json");
 
         [McpServerTool]
         [Description("Returns employee leave balances.")]
